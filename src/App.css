@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  height: 72px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 72px);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.panel {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: aqua;
+}
+.panel-b-top {
+  background-color: aqua;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.panel-b-bottom {
+  background-color: aqua;
+  height: 50vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.panel-c-left,
+.panel-c-right {
+  width: 50%;
+  position: fixed;
+  background-color: aqua;
+}
+.panel-c-left {
+  left: 0;
+  bottom: 0;
+}
+
+.panel-c-right {
+  right: 0;
+  top: 0;
+}
+
+.panel-d {
+  position: fixed;
+  background-color: aqua;
+  transform-origin: center center;
+  border-radius: 50%;
+}
+
+.panel-e{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
